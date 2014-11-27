@@ -1,96 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>VIT University | Energy Systems Modelling by prajitdatta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <title>VIT University | Energy Systems Modelling by prajitdatta</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">VIT University | Energy Systems Modelling</h1>
-        <p class="header"></p>
+    <header>
+      <div class="inner">
+        <h1>VIT University | Energy Systems Modelling</h1>
+        <h2></h2>
+        <a href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling">View On GitHub</a></li>
-        </ul>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="vit-university-energy-systems-modelling" class="anchor" href="#vit-university-energy-systems-modelling" aria-hidden="true"><span class="octicon octicon-link"></span></a>VIT University Energy Systems Modelling</h1>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/prajitdatta">prajitdatta</a></p>
+<p>Matlab codes on Energy Systems Modelling</p>
+        </section>
 
+        <aside id="sidebar">
+          <a href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-      </header>
-      <section>
-        <h1>
-<a id="vit-university-energy-systems-modelling" class="anchor" href="#vit-university-energy-systems-modelling" aria-hidden="true"><span class="octicon octicon-link"></span></a>VIT-University-Energy-Systems-Modelling</h1>
+          <p class="repo-owner"><a href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling"></a> is maintained by <a href="https://github.com/prajitdatta">prajitdatta</a>.</p>
 
-<h2>
-<a id="solar-radiation-estimation" class="anchor" href="#solar-radiation-estimation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solar radiation estimation</h2>
-
-<h3>
-<a id="aim" class="anchor" href="#aim" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aim</h3>
-
-<p>To estimate and plot the local solar radiation on daily basis using MATLAB coding</p>
-
-<h3>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h3>
-
-<p>Since measurements of solar radiation are often not available, attempts have been made by many investigators to establish relationships linking the values of radiation (global or diffuse) with meteorological parameters like number of sunshine hours, cloud cover, and precipitation.
-The visible channel is in the region of the electromagnetic spectrum where the sun emits most of its energy. Direct or beam radiation is the portion of solar radiation that reaches the surface of earth from the sun without any scattering. Diffuse radiation is created with the scattering of direct and reflected radiation by molecules, aerosols and crystals in the air. Global solar radiation is the sum of direct, diffuse and (ground) reflected solar radiation. Diffuse and reflected radiation during clear weather are less than direct, but become important in cloudy weather, when there is no direct radiation. </p>
-
-<p>Procedure
-1.  Formulate the problem.
-2.  Develop the algorithm 
-3.  Write the MATLAB coding 
-4.  Plot the results using plot option and print the graphs.</p>
-
-<p>Formulae
-Hourly global, beam and diffuse radiation under cloudless skies (clear days)
-The global radiation Ig reaching a horizontal surface on the earth is given by
-        Ig = Ib + Id
-where Ig = hourly global radiation
-    Ib = hourly beam radiation
-    Id = hourly diffuse radiation
-Now, Ib = Ibn cos θz , 
-where
-Ibn = beam radiation in the direction of the rays, and
-θz = angle of incidence on a horizontal surface, i.e. the zenith angle. Thus 
-Ig = Ibn cos θz + Id</p>
-
-<p>In the ASHRAE (American Society of Heating, Refrigerating and Air-conditioning Engineers) model, it is postulated that 
-     and
-Id = C I¬bn
-Where A, B and C are constants whose values have been determined on a month wise basis. These constants change during the year because of seasonal changes in the dust and water vapor content of the atmosphere, and also because of the changing earth-sun distance. 
-From sun-earth relationship,
-Cosθz = Sinφ Sinδ + Cosφ Cosδ Cosω
-Declination,<br>
-where n is the day number since January 1
-Hour angle, ω = 15 (solar time - 12) (in degrees)
-Solar time = Watch Time - 4 (Lst – Llo) + EoT (in minutes) 
-EoT = 9.87 sin 2B - 7.53 cos B - 1.5 sin B 
-where,<br>
-Table Values of constants, A, B and C obtained for predicting hourly solar radiation in India</p>
-
-<p><a href="https://github.com/prajitdatta/VIT-University-Energy-Systems-Modelling/blob/master/solar-radiation-estimation.m">Download code here</a></p>
-
-<h2>
-<a id="janag-table" class="anchor" href="#janag-table" aria-hidden="true"><span class="octicon octicon-link"></span></a>Janag Table</h2>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
